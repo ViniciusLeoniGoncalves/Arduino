@@ -23,7 +23,6 @@ long getDistance(int trigger, int echo){
 
 void setup() {
   Serial.begin(9600);
-  // Configura os pinos TRIG e ECHO
   pinMode(trigPin, OUTPUT); 
   pinMode(echoPin, INPUT); 
 }
