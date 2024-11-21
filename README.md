@@ -33,11 +33,14 @@ Os projetos incluídos neste repositório:
 
 - **Teste de Funcionamento de Ponte H L298N**  
   Controla dois motores DC para verificar o funcionamento da ponte H L298N.  
-  *Componentes:* Arduino Uno, Ponte H L298N, Motores DC.
+  *Componentes:* Arduino Uno, Módulo Ponte H L298N, Motores DC.
 
 - **Teste de Display LCD com Módulo I2C**  
   Exibe mensagens em um display LCD utilizando um módulo I2C para comunicação simplificada.  
   *Componentes:* Arduino Uno, Display LCD 16x2, Módulo I2C.  
+- **Controlar motor de passo por controlle Remoto Infravermelho**
+  Utiliza teclas de um controle remoto IR para determinar quantidade de passos e direção de rotação em um motor de passo, por um número de até 3 dígitos.
+  *Componentes:* Arduino Uno, Receptor IR, Controle IR, Motor de Passo, Módulo Ponte H L298N.
 
 > Para mais detalhes, veja a pasta de cada projeto.  
 
