@@ -19,7 +19,7 @@ void setup()
 void loop()
 {
     lcd.setCursor(3,0);
-  lcd.print("Fuck GPS!");
+  lcd.print("Blink Display");
   delay(1000);
   lcd.clear();
   delay(1000);
