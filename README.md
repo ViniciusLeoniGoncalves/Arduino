@@ -38,9 +38,14 @@ Os projetos incluídos neste repositório:
 - **Teste de Display LCD com Módulo I2C**  
   Exibe mensagens em um display LCD utilizando um módulo I2C para comunicação simplificada.  
   *Componentes:* Arduino Uno, Display LCD 16x2, Módulo I2C.  
-- **Controlar motor de passo por controlle Remoto Infravermelho**
+
+- **Controlar motor de passo por controle Remoto Infravermelho**
   Utiliza teclas de um controle remoto IR para determinar quantidade de passos e direção de rotação em um motor de passo, por um número de até 3 dígitos.
   *Componentes:* Arduino Uno, Receptor IR, Controle IR, Motor de Passo, Módulo Ponte H L298N.
+
+- **Contolar garra robótica por controle Remoto Infravermelho**
+  Utiliza teclas de um controle remoto IR para mover as articulações de um braço robótico e sua garra. Comandos: Esquerda, direita, cima, baixo, para frente, para trás, garra aberta e garra fechada.
+  *Componentes:* Arduino Uno, Receptor IR, Controle IR, Garra robótica (4 servo motores acoplados)
 
 > Para mais detalhes, veja a pasta de cada projeto.  
 
