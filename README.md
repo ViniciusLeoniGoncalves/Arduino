@@ -43,9 +43,10 @@ Os projetos incluídos neste repositório:
   Utiliza teclas de um controle remoto IR para determinar quantidade de passos e direção de rotação em um motor de passo, por um número de até 3 dígitos.
   *Componentes:* Arduino Uno, Receptor IR, Controle IR, Motor de Passo, Módulo Ponte H L298N.
 
-- **Contolar garra robótica por controle Remoto Infravermelho**
-  Utiliza teclas de um controle remoto IR para mover as articulações de um braço robótico e sua garra. Comandos: Esquerda, direita, cima, baixo, para frente, para trás, garra aberta e garra fechada.
-  *Componentes:* Arduino Uno, Receptor IR, Controle IR, Garra robótica (4 servo motores acoplados)
+- **Controlar Garra Robótica por Controle Remoto Infravermelho**  
+  Permite o controle de um braço robótico e sua garra utilizando as teclas de um controle remoto IR. Os comandos incluem movimentação das articulações (esquerda, direita, cima, baixo, frente e trás) e controle da garra (abrir e fechar).  
+  *Componentes:* Arduino Uno, Receptor IR, Controle IR, Garra Robótica (composta por 4 servo motores).  
+
 
 > Para mais detalhes, veja a pasta de cada projeto.  
 
