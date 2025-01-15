@@ -47,6 +47,9 @@ Os projetos incluídos neste repositório:
   Permite o controle de um braço robótico e sua garra utilizando as teclas de um controle remoto IR. Os comandos incluem movimentação das articulações (esquerda, direita, cima, baixo, frente e trás) e controle da garra (abrir e fechar).  
   *Componentes:* Arduino Uno, Receptor IR, Controle IR, Garra Robótica (composta por 4 servo motores).  
 
+- **Sistema de Alimentação Automática de Animais com temporizador**
+  Controla a liberação de ração em intervalos configuráveis utilizando um servo motor para abrir o compartimento de alimento. O tempo até a próxima refeição é exibido em um display LCD, com um relógio regressivo implementado sem bibliotecas, utilizando apenas o contador interno do Arduino.
+  *Componentes:* Arduino Uno, Display LCD 16x2 com Módulo I2C, Servo Motor.
 
 > Para mais detalhes, veja a pasta de cada projeto.  
 
