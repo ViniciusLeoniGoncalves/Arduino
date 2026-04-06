@@ -1,10 +1,43 @@
-#include <Wire.h>
+/********************************************************************
+ * Projeto de medição de temperatura com DS18B20
+ * Desenvolvido pela Curto Circuito com base no exemplo Simple
+ */
+/********************************************************************/
+
+/*inclusão das bibliotecas necessárias*/
+#include <OneWire.h>  
+#include <DallasTemperature.h>
+/********************************************************************/
+
+#define dados 2 /*o pino de dados do sensor está ligado na porta 2 do Arduino*/
+
+OneWire oneWire(dados);  /*Protocolo OneWire*/
+/********************************************************************/
+DallasTemperature sensors(&oneWire); /*encaminha referências OneWire para o sensor*/
+/********************************************************************/ 
 
 
-void setup(){
 
+void printTempOnSerial(int deviceIndex){
+  Serial.print(" Requerimento de temperatura..."); 
+  sensors.requestTemperatures();
+  float temperature = sensors.getTempCByIndex(deviceIndex);
+  
+  /* use sensors.requestTemperatures() para o requerimento de temperatura de todos os dispositivos ligados */
+ Serial.print("A temperatura é: "); /* Printa "A temperatura é:" */
+ Serial.println(temperature); /* Endereço do sensor */
+  
 }
 
-void loop(){
 
-}
+void setup() /*laço de configuração*/
+{ 
+ Serial.begin(9600); /*definição de Baudrate de 9600*/
+ Serial.println("Demonstração do funcionamento do sensor"); /*Printa "Demonstração do funcionamento do sensor"*/
+ sensors.begin(); /*inicia biblioteca*/
+ printTempOnSerial(0);
+} 
+void loop() /*laço de repetição*/
+{ 
+ 
+} 
